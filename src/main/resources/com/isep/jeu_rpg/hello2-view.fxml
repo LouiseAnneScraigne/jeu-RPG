@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+
+<AnchorPane prefHeight="385.0" prefWidth="672.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1"
+            style="-fx-background-color: #b3b3b3;" fx:controller="com.isep.jeu_rpg.MainController">
+    <children>
+        <Label text="C’est parti !" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="20.0" />
+        <Label text="Veuillez choisir le nombre de héros pour votre partie :" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="60.0" />
+        <Spinner fx:id="heroCountSpinner" editable="true" maxWidth="100.0" min="1" prefWidth="100.0" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="55.0" />
+        <Label text="Entrez le nom de chaque héro :" AnchorPane.leftAnchor="20.0" AnchorPane.topAnchor="100.0" />
+        <VBox fx:id="heroNameBox" prefHeight="200.0" prefWidth="200.0" spacing="10.0" AnchorPane.leftAnchor="250.0" AnchorPane.topAnchor="95.0">
+            <children>
+                <TextField fx:id="hero1NameField" prefWidth="200.0" />
+                <TextField fx:id="hero2NameField" prefWidth="200.0" />
+                <TextField fx:id="hero3NameField" prefWidth="200.0" />
+            </children>
+            <padding>
+                <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+            </padding>
+        </VBox>
+        <Button fx:id="startGameButton" mnemonicParsing="false" onAction="#startGame" text="Démarrer la partie" AnchorPane.bottomAnchor="20.0" AnchorPane.rightAnchor="20.0" />
+    </children>
+</AnchorPane>
